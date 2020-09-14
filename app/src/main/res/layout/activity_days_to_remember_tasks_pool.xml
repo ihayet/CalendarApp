@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".days_to_remember_tasks_pool.DaysToRemember_TasksPool_Activity"
+    android:id="@+id/daysToRememberTasksPoolLayout"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberTasksPoolTitle"
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberTasksPoolListView"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberTasksPoolAdd"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberTasksPoolAddLabel"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberTasksPoolDelete"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberTasksPoolDeleteLabel"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberTasksPoolDeleteAll"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberTasksPoolDeleteAllLabel"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberTasksPoolListEmpty"
+        android:gravity="center"
+        android:text="No items in the list"
+        />
+
+</RelativeLayout>

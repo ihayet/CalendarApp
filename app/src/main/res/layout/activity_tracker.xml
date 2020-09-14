@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/week"
+        android:text="Week 1,January"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statisticsTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/torn_paper"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/ButtonRight"
+        android:background="@drawable/right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/week"
+        android:layout_alignTop="@+id/week"
+        android:layout_marginLeft="15dp"
+        />
+    <Button
+        android:id="@+id/ButtonLeft"
+        android:background="@drawable/left_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@+id/week"
+        android:layout_toStartOf="@+id/week"
+        android:layout_alignTop="@+id/week"
+        android:layout_marginRight="15dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statisticsTitle"
+        />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/idPieChart"
+        android:layout_below="@+id/week"
+        android:layout_marginTop="30dp">
+    </com.github.mikephil.charting.charts.PieChart>
+
+
+</RelativeLayout>

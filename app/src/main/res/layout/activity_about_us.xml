@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aboutUsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.quadstack.everroutine.about_us.AboutUsActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/titleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aboutUsTitle"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:id="@+id/eatlDetails"
+                android:background="@drawable/torn_paper"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/eatlLabel">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eatlLogo"
+                    android:src="@drawable/eatl"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eatlDescription"
+                    android:layout_below="@+id/eatlLogo"
+                    android:text="EverRoutine is an intelligent routine app that is proudly presented by Ethics Advanced Technology Limited (EATL)"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eatlLabel"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/titleLayout"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/presented_by"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/quadstack"
+                android:layout_below="@+id/eatlDetails"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/quadstack"/>
+
+            <RelativeLayout
+                android:layout_below="@id/quadstack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewLayout">
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attributionDescription"
+                android:background="@drawable/torn_paper"
+                android:layout_below="@+id/attributionLabel"
+                android:layout_centerHorizontal="true"
+                android:text="Freepik, Medialoot, Flaticon, Puppets, Madebyoliver, Fudgegraphics, 365psd, Gregor Cresnar, Daniel Bruce\nSplash Screen: Maisha Mossharat"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attributionLabel"
+                android:layout_below="@+id/listViewLayout"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/attribution"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:id="@+id/socialLayout"
+                android:layout_below="@+id/socialLabel"
+                android:background="@drawable/torn_paper"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/facebook"
+                    android:src="@drawable/fb"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/socialText"
+                    android:text="www.facebook.com/EverRoutine\nLike our Page"
+                    android:layout_alignBottom="@+id/facebook"
+                    android:layout_toRightOf="@+id/facebook"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/socialLabel"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/attributionDescription"
+                android:src="@drawable/social_links"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

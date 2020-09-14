@@ -1,0 +1,17 @@
+1. Violet:
+
+Inside: 	d9b6d5
+Outside:	9a00a8
+
+2. Red:
+
+Inside:		fdc6b8
+Outside:	ff4200
+
+3. Days_To_Remember_Row_Background:
+
+Inside:		efebeb
+
+
+flaticon.com
+freepik.com

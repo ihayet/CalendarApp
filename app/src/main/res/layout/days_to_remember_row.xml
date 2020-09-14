@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:id="@+id/daysToRememberRowContainer"
+    >
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/days_to_remember_row_background"
+        android:id="@+id/daysToRememberRow"
+        >
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="22dp"
+            android:id="@+id/daysToRememberRowImage"
+            android:src="@drawable/official"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/daysToRememberRowImage"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/daysToRememberRowName"
+            android:text="Event Name"
+            android:textSize="22dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/daysToRememberRowName"
+            android:layout_alignLeft="@+id/daysToRememberRowName"
+            android:layout_marginTop="5dp"
+            android:id="@+id/daysToRememberRowDate"
+            android:text="Event Date"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/daysToRememberRowDate"
+            android:layout_alignLeft="@+id/daysToRememberRowDate"
+            android:layout_marginTop="5dp"
+            android:id="@+id/daysToRememberRowDescription"
+            android:text="Event Description"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberRowTick"
+        />
+
+</RelativeLayout>

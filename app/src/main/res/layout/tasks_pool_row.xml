@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:id="@+id/tasksPoolRowContainer"
+    >
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/days_to_remember_row_background"
+        android:id="@+id/tasksPoolRow"
+        >
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="22dp"
+            android:id="@+id/tasksPoolRowImage"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/daysToRememberRowImage"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tasksPoolRowName"
+            android:text="Task Name"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tasksPoolRowPriorityText"
+            android:text="Priority:"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="2"
+            android:progress="1"
+            android:id="@+id/tasksPoolRowPriority"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tasksPoolRowAlarm"
+            android:text="Alarm: "
+            android:textSize="12dp"
+            android:textColor="#000000"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tasksPoolRowTick"
+        android:focusable="false"
+        />
+
+</RelativeLayout>

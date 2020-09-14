@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:id="@+id/taskRowContainer"
+    >
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/days_to_remember_row_background"
+        android:id="@+id/taskRow"
+        >
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/taskRowName"
+            android:text="Task Name"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskRowTimeText"
+            android:layout_below="@+id/taskRowName"
+            android:layout_alignLeft="@+id/taskRowName"
+            android:text="Time"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskRowPriorityText"
+            android:layout_marginTop="-5dp"
+            android:layout_below="@+id/taskRowTimeText"
+            android:layout_alignLeft="@+id/taskRowName"
+            android:text="Priority:"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="2"
+            android:progress="1"
+            android:id="@+id/taskRowPriority"
+            android:layout_alignTop="@+id/taskRowPriorityText"
+            android:layout_toRightOf="@+id/taskRowPriorityText"
+            android:focusable="false"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskRowTick"
+        android:focusable="false"
+        />
+
+</RelativeLayout>

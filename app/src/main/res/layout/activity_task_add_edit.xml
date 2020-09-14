@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tasks.TaskAddEdit"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskAddEditTitle"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskAddEditScrollView"
+        android:fillViewport="true"
+        android:layout_below="@+id/taskAddEditTitle"
+        android:layout_marginTop="100px"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditName"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="18"
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditCategory"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditPriorityLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taskAddEditPriorityLow"
+                    android:layout_alignParentStart="true"
+                    android:text="LOW"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taskAddEditPriorityMedium"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignTop="@+id/taskAddEditPriorityLow"
+                    android:text="MEDIUM"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taskAddEditPriorityHigh"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/taskAddEditPriorityMedium"
+                    android:text="HIGH"
+                    />
+
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taskAddEditPriority"
+                    android:max="2"
+                    android:progress="1"
+                    android:layout_below="@+id/taskAddEditPriorityMedium"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditAlarmLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taskAddEditAlarmTextView"
+                    android:layout_alignParentStart="true"
+                    android:text="OFF"
+                    />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taskAddEditAlarm"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/taskAddEditAlarmTextView"
+                    android:checked="false"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditRecursiveLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taskAddEditRecursiveTextView"
+                    android:layout_alignParentStart="true"
+                    android:text="Every Week - OFF"
+                    />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taskAddEditRecursive"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/taskAddEditRecursiveTextView"
+                    android:checked="false"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    />
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditDate"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditDay"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditStartTime"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditStopTime"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditNameLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditCategoryLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditPriorityLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditAlarmLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditRecursiveLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditDayDateLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditStartTimeLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditStopTimeLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditSaveReturnButton"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditSaveMoreButton"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditSaveButton"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskAddEditDeleteButton"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

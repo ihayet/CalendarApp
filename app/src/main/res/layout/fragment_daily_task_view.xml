@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyTaskLeftArrow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyTaskDate"
+        android:background="@drawable/torn_paper"
+        android:text="22-Jun-2017  SUN"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyTaskRightArrow"
+        android:layout_toRightOf="@+id/dailyTaskDate"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyTaskListView"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyTaskAdd"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyTaskAddLabel"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyTaskDelete"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyTaskDeleteLabel"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyTaskDeleteAll"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyTaskDeleteAllLabel"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyTaskListEmpty"
+        android:gravity="center"
+        android:text="No items in the list"
+        />
+
+</RelativeLayout>

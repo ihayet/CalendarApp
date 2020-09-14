@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tasks_pool.TasksPoolAddEdit"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tasksPoolAddEditTitle"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tasksPoolAddEditScrollView"
+        android:fillViewport="true"
+        android:layout_below="@+id/tasksPoolAddEditTitle"
+        android:layout_marginTop="100px"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tasksPoolAddEditName"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="18"
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tasksPoolAddEditCategory"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tasksPoolAddEditPriorityLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tasksPoolAddEditPriorityLow"
+                    android:layout_alignParentStart="true"
+                    android:text="LOW"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tasksPoolAddEditPriorityMedium"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignTop="@+id/tasksPoolAddEditPriorityLow"
+                    android:text="MEDIUM"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tasksPoolAddEditPriorityHigh"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/tasksPoolAddEditPriorityMedium"
+                    android:text="HIGH"
+                    />
+
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tasksPoolAddEditPriority"
+                    android:max="2"
+                    android:progress="1"
+                    android:layout_below="@+id/tasksPoolAddEditPriorityMedium"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tasksPoolAddEditAlarmLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tasksPoolAddEditAlarmTextView"
+                    android:layout_alignParentStart="true"
+                    android:text="OFF"
+                    />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tasksPoolAddEditAlarm"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/tasksPoolAddEditAlarmTextView"
+                    android:checked="false"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tasksPoolAddEditNameLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tasksPoolAddEditCategoryLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tasksPoolAddEditPriorityLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tasksPoolAddEditAlarmLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tasksPoolAddEditSaveReturnButton"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tasksPoolAddEditSaveMoreButton"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tasksPoolAddEditSaveButton"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tasksPoolAddEditDeleteButton"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

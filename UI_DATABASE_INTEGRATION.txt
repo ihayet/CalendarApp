@@ -1,0 +1,23 @@
+Date Reference:
+-------------------------------------------------------------------------------------------------------------------
+
+1. Retrieve all the date references at the beginning and store them in Application memory
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Days To Remember:
+-------------------------------------------------------------------------------------------------------------------
+
+1. Retrieve days to remember in one transaction
+
+2. Add to days to remember
+
+3. Update days to remember in the list (not database) after button to the right is clicked - When back button is
+pressed, update all the corresponding event entries in one transaction
+
+4. Delete days to remember in the list (not database) after button to the right is clicked - When back button is
+pressed, delete all the corresponding event entries in one transaction
+
+4. Long press - select days to remember - delete from the list - when back button is pressed, delete all the
+corresponding event entries in one transaction

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".days_to_remember.DaysToRememberAddEdit"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberAddEditTitle"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberAddEditScrollView"
+        android:fillViewport="true"
+        android:layout_below="@+id/daysToRememberAddEditTitle"
+        android:layout_marginTop="100px"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/daysToRememberAddEditName"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="18"
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/daysToRememberAddEditDate"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/daysToRememberAddEditCategory"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/daysToRememberAddEditDetails"
+                android:singleLine="false"
+                android:maxLines="7"
+                android:maxLength="130"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/daysToRememberAddEditNameLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/daysToRememberAddEditDateLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/daysToRememberAddEditCategoryLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/daysToRememberAddEditDetailsLabel"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/daysToRememberAddEditSaveReturnButton"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/daysToRememberAddEditSaveMoreButton"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/daysToRememberAddEditSaveButton"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/daysToRememberAddEditDeleteButton"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

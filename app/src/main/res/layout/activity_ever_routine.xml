@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quadstack.everroutine.EverRoutine"
+    android:id="@+id/homePageLayout"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/officialButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/officialLabel"
+        android:layout_below="@+id/officialButton"
+        android:layout_alignLeft="@+id/officialButton"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/academicButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/academicLabel"
+        android:layout_below="@+id/academicButton"
+        android:layout_alignLeft="@+id/academicButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/miscellaneousButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/miscellaneousLabel"
+        android:layout_below="@+id/miscellaneousButton"
+        android:layout_alignLeft="@+id/miscellaneousButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/combinedButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/combinedLabel"
+        android:layout_below="@+id/combinedButton"
+        android:layout_alignLeft="@+id/combinedButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysToRememberLabel"
+        android:layout_below="@+id/daysToRememberButton"
+        android:layout_alignLeft="@+id/daysToRememberButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tasksListButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tasksListLabel"
+        android:layout_below="@+id/tasksListButton"
+        android:layout_alignLeft="@+id/tasksListButton" />
+
+</RelativeLayout>
